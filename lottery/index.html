@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .button {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            font-family:幼圆
+        }
+        .button:hover {
+            text-decoration: none;
+        }
+        .button:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<h1 style="font-family:幼圆">滨兴学校</h1>
+<canvas id="canvas" style="display:block;margin:50px auto;">
+    当前浏览器不支持Canvas，请更换浏览器后再试
+</canvas>
+<div style="font-family:幼圆;font-size: 20px">恭喜第 <a id="count" style="color: red">0</a> 位中奖老师</div>
+<br>
+<button onclick="nextNum()" class="button">抽奖
+</button>
+
+<script src="digit.js"></script>
+<script src="countdown.js"></script>
+<div id="rest"></div>
+</body>
+</html>
